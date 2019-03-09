@@ -3,7 +3,7 @@
 
 
 {% if osd_scenario != 'lvm' -%}
-{% if disk_list.get('rc') == 0 -%}
+{% if disk_list.get('rc') == 0 or old_disk_list.get('rc') == 0 -%}
 #############
 # VARIABLES #
 #############
